@@ -1,0 +1,17 @@
+cabal-version:      2.4
+name:               lab1
+version:            0.1.0.0
+synopsis:           Інформаційна система "Пакети прикладних програм, розроблених на факультеті" (Haskell + MySQL)
+build-type:         Simple
+
+executable lab1
+    main-is:          Main.hs
+    other-modules:    Db, Model, Prompt
+    hs-source-dirs:   src
+    build-depends:    base >=4 && <5
+                    , mysql
+                    , mysql-simple
+                    , text
+                    , time
+    default-language: Haskell2010
+    ghc-options:      -Wall

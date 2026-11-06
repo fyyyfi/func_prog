@@ -1,0 +1,12 @@
+packages: lab1 lab2 lab3
+
+constraints: setup.Cabal < 3.14
+allow-newer: Cabal:base, Cabal-syntax:base, mysql:base, pcre-light:base, mysql-simple:base
+
+package pcre-light
+  extra-include-dirs: /opt/homebrew/include
+  extra-lib-dirs: /opt/homebrew/lib
+
+package mysql
+  extra-include-dirs: /opt/homebrew/opt/zstd/include /opt/homebrew/opt/openssl@3/include
+  extra-lib-dirs: /opt/homebrew/opt/zstd/lib /opt/homebrew/opt/openssl@3/lib
